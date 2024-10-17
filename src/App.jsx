@@ -1,7 +1,9 @@
+import Test from "./components/Test";
+
 function App() {
   return (
     <div>
-      <p className="bg-die-yellow">HI</p>
+      <Test />
     </div>
   );
 }
