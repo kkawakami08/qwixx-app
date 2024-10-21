@@ -1,16 +1,10 @@
-import Test from "./components/Test";
 import Die from "./components/Die";
+import DiceTray from "./components/dice/DiceTray";
 
 function App() {
   return (
-    <div>
-      {/* <Test /> */}
-      <Die color={"bg-die-green"} />
-      <Die color={"bg-die-red"} />
-      <Die color={"bg-die-yellow"} />
-      <Die color={"bg-die-blue"} />
-      <Die color={"bg-white"} />
-      <Die color={"bg-white"} />
+    <div className="bg-white h-screen w-screen">
+      <DiceTray />
     </div>
   );
 }

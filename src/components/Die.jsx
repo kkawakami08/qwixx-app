@@ -5,15 +5,15 @@ import DieFour from "../assets/dice/die-face-4.svg";
 import DieFive from "../assets/dice/die-face-5.svg";
 import DieSix from "../assets/dice/die-face-6.svg";
 
-const Die = ({ color }) => {
+const Die = ({ value, color }) => {
   const dotColor =
     color.includes("red") || color.includes("blue")
       ? "text-white"
       : "text-black";
 
   const getDieFace = (dotColor) => {
-    const randomNum = Math.floor(Math.random() * (6 - 1) + 1);
-    switch (randomNum) {
+    // const randomNum = Math.floor(Math.random() * (6 - 1) + 1);
+    switch (value) {
       case 1:
         return <DieOne className={dotColor} />;
       case 2:
@@ -32,8 +32,8 @@ const Die = ({ color }) => {
   };
 
   const dieFace = getDieFace(dotColor);
+  console.log(color, value);
 
-  console.log(dieFace);
   return <div className={`${color} w-14 rounded-lg p-1`}>{dieFace}</div>;
 };
 
