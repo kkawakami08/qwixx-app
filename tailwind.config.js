@@ -8,6 +8,8 @@ export default {
         "die-yellow": "#FFBF61",
         "die-green": "#8ABFA3",
         "die-blue": "#00A7E1",
+        white: "#F9F6EE",
+        black: "#111810",
       },
     },
   },

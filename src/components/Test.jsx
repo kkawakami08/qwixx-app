@@ -28,7 +28,7 @@ const Test = () => {
       ) : (
         <div style={{ backgroundColor: "red", width: "100%", height: "100%" }}>
           {/* Your Red Die representation */}
-          <h2 className="text-white">Red Die</h2>
+          <h2 className="text-white">Roll Dice</h2>
         </div>
       )}
     </div>
