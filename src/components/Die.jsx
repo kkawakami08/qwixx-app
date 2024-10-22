@@ -8,8 +8,8 @@ import DieSix from "../assets/dice/die-face-6.svg";
 const Die = ({ value, color }) => {
   const dotColor =
     color.includes("red") || color.includes("blue")
-      ? "text-white"
-      : "text-black";
+      ? "text-custom-white"
+      : "text-custom-black";
 
   const getDieFace = (dotColor) => {
     // const randomNum = Math.floor(Math.random() * (6 - 1) + 1);
